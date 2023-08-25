@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Test Suite" parallel="methods" thread-count="2">
+<listeners>
+<listener class-name="testNGLearning.ListernersExample"></listener>
+</listeners>
+<test name = "Test Cases">
+<classes>
+<class name = "testNGLearning.Dummy"></class>
+</classes>
+</test>
+</suite>
+
+
+<!-- <class name="testNGLearning.ManagementDependenciesExample"></class>
+<class name="testNGLearning.PriorityExamples"></class>
+<class name="testNGLearning.SampleTestCase"></class>
+<class name="testNGLearning.SkipTestCaseExample"></class>
+<class name="testNGLearning.Dummy"></class> -->
+
+<!-- <groups>
+	<run>
+		<include name= "Realme"></include>
+		<include name= "Samsung"></include>
+
+	</run>
+</groups> -->
+
+
+<!-- <parameter name="Name" value="Mukesh"></parameter> -->

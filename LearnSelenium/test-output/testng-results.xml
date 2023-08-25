@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1085" started-at="2023-08-18T09:47:03Z" finished-at="2023-08-18T09:47:04Z">
+    <groups>
+      <group name="ParentsPermission">
+        <method signature="DependsOnTestNG.BoyParentPermission()[pri:0, instance:interviewQuestionsSelenium.DependsOnTestNG@724af044]" name="BoyParentPermission" class="interviewQuestionsSelenium.DependsOnTestNG"/>
+        <method signature="DependsOnTestNG.GirlParentPermission()[pri:0, instance:interviewQuestionsSelenium.DependsOnTestNG@724af044]" name="GirlParentPermission" class="interviewQuestionsSelenium.DependsOnTestNG"/>
+      </group> <!-- ParentsPermission -->
+    </groups>
+    <test name="Default test" duration-ms="1085" started-at="2023-08-18T09:47:03Z" finished-at="2023-08-18T09:47:04Z">
+      <class name="interviewQuestionsSelenium.DependsOnTestNG">
+        <test-method status="PASS" signature="BoyParentPermission()[pri:0, instance:interviewQuestionsSelenium.DependsOnTestNG@724af044]" name="BoyParentPermission" duration-ms="19" started-at="2023-08-18T09:47:03Z" finished-at="2023-08-18T09:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BoyParentPermission -->
+        <test-method status="FAIL" signature="GirlParentPermission()[pri:0, instance:interviewQuestionsSelenium.DependsOnTestNG@724af044]" name="GirlParentPermission" duration-ms="1014" started-at="2023-08-18T09:47:03Z" finished-at="2023-08-18T09:47:04Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method interviewQuestionsSelenium.DependsOnTestNG.GirlParentPermission() didn't finish within the time-out 1000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method interviewQuestionsSelenium.DependsOnTestNG.GirlParentPermission() didn't finish within the time-out 1000
+at java.lang.Thread.interrupt0(Native Method)
+at java.lang.Thread.interrupt(Unknown Source)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:64)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GirlParentPermission -->
+        <test-method status="PASS" signature="Marriage()[pri:0, instance:interviewQuestionsSelenium.DependsOnTestNG@724af044]" name="Marriage" duration-ms="2" depends-on-groups="ParentsPermission" started-at="2023-08-18T09:47:04Z" finished-at="2023-08-18T09:47:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Marriage -->
+      </class> <!-- interviewQuestionsSelenium.DependsOnTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

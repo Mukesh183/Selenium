@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="interviewQuestionsSelenium.TransformerForAutomateRetest"/>
+  </listeners>
+  <test thread-count="5" name="Test Cases(failed)" parallel="methods">
+    <classes>
+      <class name="interviewQuestionsSelenium.TestCasesforRerunExamples">
+        <methods>
+          <include name="test2"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- interviewQuestionsSelenium.TestCasesforRerunExamples -->
+    </classes>
+  </test> <!-- Test Cases(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
