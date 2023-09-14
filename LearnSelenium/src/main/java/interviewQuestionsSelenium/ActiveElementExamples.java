@@ -13,6 +13,7 @@ public class ActiveElementExamples {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.co.in/");
+		
 	//	driver.switchTo().activeElement().sendKeys("CSK \n");
 		
 		PageFactory.initElements(driver, ActiveElementExamples.class);
